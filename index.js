@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true })); //Для принятия д
 app.use(bodyParser.json());//Для принятия данных из формы. Обязательно!!!
 
 
-let index = require('./routes/index');
+let index = require('./routes/index2');
 app.use('/', index);
 
 
