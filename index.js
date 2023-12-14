@@ -23,4 +23,7 @@ let admin = require('./routes/admin');
 app.use('/admin', admin);
 
 
+let news = require('./routes/news');
+app.use('/news', news);
+
 app.listen(3000);

@@ -6,12 +6,12 @@
 </head>
 <body>
     <% data.forEach(function(item) {%>
-        <p><a href="http://localhost:3000/admin/<%=item.idArticle %>"><%=item.titleArticle %></a>
-            <p>
+        <p class="title"><a href="http://localhost:3000/admin/<%=item.idArticle %>"><%=item.titleArticle %></a>
+            <p class="txt">
                 <%=item.descriptionArticle %>
             </p>
             <% }); %>
-    <div>
+    <div class="forma">
         <h2>Добавить статью</h2>
 
     <form action="http://localhost:3000/admin/addArticle" method="post">
@@ -28,6 +28,7 @@
         <button type="submit" id="sendArticle">Создать статью</button>
     </form>
     </div> 
+</body>
     <script>
         document.querySelector("#sendArticle").onclick=function(){
             event.stopPropagation();
@@ -44,6 +45,5 @@
                 body: JSON.stringify(article)
             });
         }
-    </script>
-</body>
+    </script
 </html>

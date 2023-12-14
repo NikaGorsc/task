@@ -7,7 +7,7 @@
 <body>
     <% data.forEach(function(item) {%>
         <p class="articleList"><a href="http://localhost:3000/article/<%=item.idArticle %>"><%=item.titleArticle %></a>
-            <p>
+            <p class="txt">
                 <%=item.descriptionArticle %>
             </p>
             <% }); %>   
