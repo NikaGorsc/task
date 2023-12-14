@@ -44,7 +44,7 @@ exports.addOne = async function(req,res){
 exports.editOne = async function(req,res){
 
     let arr = [];
-    let sql = "uodate article set titleArticle=?,textArticle=?,descriptionArticle=? where idArticle=?";
+    let sql = "update article set titleArticle=?,textArticle=?,descriptionArticle=? where idArticle=?";
     filter = [req.titleArticle,req.textArticle,req.descriptionArticle,+req.idArticle];
     await connection.query(sql,filter)
     .then(data=>{
