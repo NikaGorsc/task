@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../public/1.css">
 </head>
 <body>
     <% data.forEach(function(item) {%>
-        <p><a href="http://localhost:3000/article/<%=item.idArticle %>"><%=item.titleArticle %></a>
+        <p id="articleList"><a href="http://localhost:3000/article/<%=item.idArticle %>"><%=item.titleArticle %></a>
             <p>
                 <%=item.descriptionArticle %>
             </p>
