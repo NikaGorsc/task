@@ -34,7 +34,7 @@ exports.getOne=async function(req,res,idArticle){
     })
     .catch(err=>{
         console.log(err);
-    })
+    });
     console.log("arr");
     console.log(arr);
     return arr;
