@@ -20,8 +20,9 @@ exports.editArticle = async function(req,res){
     let m = await Models.getOne(req.body.idArticle);
     res.render('adminArticleShow',{data:m});
 };
-exports.deleteArticle = async function(req,res){
-    await Models.deleteOne();
-    let m = await Models.getAll();
-    res.render('adminArticles',{data:m});
+exports.deleteArticle = async function(req, res){ 
+    const idArticle = req.body.idArticle;
+    await Models.deleteOne(idArticle); 
+    let m=await Models.getAll();
+    res.render('adminArticles', {data:m});
 };
