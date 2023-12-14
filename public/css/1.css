@@ -2,17 +2,17 @@ body{
     color: rgb(184, 133, 232);
 
 }
-#articleList{
+.articleList{
     color: aliceblue;
     border-radius: 2px solid black;
     text-align: center;
     margin-left: 20%;
 }
-#title{
+.title{
     text-align: center;
     font-weight: bold;
 }
-#txt{
+.txt{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
