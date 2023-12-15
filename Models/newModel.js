@@ -20,7 +20,7 @@ exports.getAll=async function(req,res){
 
 exports.getOne=async function(req,res,idArticle){
     let arr = [];
-    let sql = "select * from article where idNew=?";
+    let sql = "select * from news where idNew=?";
     console.log(req);
     filter = [req];
     console.log(req);
