@@ -1,6 +1,5 @@
-module.exports = router;
 let express = require('express');
-const articleController = require("../controllers/newsController.js");
+const newsController = require("../controllers/newsController.js");
 var router = express.Router();
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({extended:false});
